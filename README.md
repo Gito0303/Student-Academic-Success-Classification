@@ -230,8 +230,6 @@ Berikut adalah penjelasan tentang metrik yang digunakan dalam classification rep
 #### Tabel Perbandingan Classification Report 
 Berikut adalah perbandingan metrik evaluasi untuk setiap model:
 
-### FNN, DNN, and Random Forest Model Performance 🧑‍💻
-
 | Metric        | FNN (Dropout) | FNN (Enrolled) | FNN (Graduate) | DNN (Dropout) | DNN (Enrolled) | DNN (Graduate) | RF (Dropout) | RF (Enrolled) | RF (Graduate) |
 |---------------|---------------|-----------------|----------------|---------------|----------------|----------------|--------------|---------------|---------------|
 | **Precision** | 0.90          | 0.63            | 0.81           | 0.86          | 0.59           | 0.85           | 0.88         | 0.62          | 0.84          |
