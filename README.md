@@ -19,8 +19,10 @@
 
 ---
 
-1. [Deskripsi Project](#-klasifikasi-kesuksesan-akademik-mahasiswa-)
-2. [Sumber Dataset](#-sumber-dataset)
+1. [Deskripsi Project](#-deskripsi-project-)
+      - [Latar Belakang](#latar-belakang)
+      - [Tujuan Pengembangan](#tujuan-pengembangan)
+3. [Sumber Dataset](#-sumber-dataset)
 
 
 ---
