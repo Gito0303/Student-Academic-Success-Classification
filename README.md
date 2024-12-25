@@ -30,6 +30,12 @@
       - [Dependensi](#dependensi)
       - [Menjalankan Sistem Prediksi](#menjalankan-sistem-prediksi)
       - [Pelatihan Model](#pelatihan-model)
+5. [Hasil dan Analisis](#-hasil-dan-analisis-)
+      - [Evaluasi Model](#evaluasi-model )
+6. [Sistem Sederhana Streamlit](#-sistem-sederhana-streamlit-)
+      - [Tampilan](#tampilan)
+      - [Link Live Demo](#link-live-demo)
+7. [Biodata](#-biodata-)  
 
 ---
 
@@ -204,6 +210,120 @@ Model yang telah dilatih tersedia di direktori [Model](Model). Namun dalam hal i
 
 Jika Anda ingin melatih model dari awal, jalankan file [Notebook-Model.ipynb](Notebook-Model.ipynb) yang tersedia di direktori ini menggunakan Google Colab.
 
+
+---
+
+
+<h1 align="center">🔍 Hasil dan Analisis 🔍</h1>
+
+### Evaluasi Model 
+Model dievaluasi menggunakan beberapa metrik, termasuk **classification report** dan **confusion matrix**.
+
+#### Classification Report 
+Berikut adalah penjelasan tentang metrik yang digunakan dalam classification report:
+
+- **Precision**: Mengukur proporsi prediksi positif yang benar.
+- **Recall**: Mengukur proporsi sampel aktual positif yang berhasil diidentifikasi dengan benar.
+- **F1-Score**: Rata-rata harmonis dari precision dan recall.
+- **Accuracy**: Mengukur keseluruhan performa model.
+
+#### Tabel Perbandingan Classification Report 
+Berikut adalah perbandingan metrik evaluasi untuk setiap model:
+
+##### FNN Model Performance 🧑‍💻
+| Metric            | Dropout  | Enrolled  | Graduate  |
+|-------------------|----------|-----------|-----------|
+| **Precision**     | 0.90     | 0.63      | 0.81      |
+| **Recall**        | 0.79     | 0.51      | 0.95      |
+| **F1-Score**      | 0.84     | 0.56      | 0.87      |
+| **Accuracy**      | **0.81** |           |           |
+
+##### DNN Model Performance 🧑‍💻
+| Metric            | Dropout  | Enrolled  | Graduate  |
+|-------------------|----------|-----------|-----------|
+| **Precision**     | 0.86     | 0.59      | 0.85      |
+| **Recall**        | 0.83     | 0.57      | 0.89      |
+| **F1-Score**      | 0.85     | 0.58      | 0.87      |
+| **Accuracy**      | **0.81** |           |           |
+
+##### Random Forest Model Performance 🧑‍💻
+| Metric            | Dropout  | Enrolled  | Graduate  |
+|-------------------|----------|-----------|-----------|
+| **Precision**     | 0.88     | 0.62      | 0.84      |
+| **Recall**        | 0.82     | 0.55      | 0.91      |
+| **F1-Score**      | 0.85     | 0.58      | 0.87      |
+| **Accuracy**      | **0.81** |           |           |
+
+
+#### Confusion Matrix 🔴🟢
+Di bawah ini adalah confusion matrix untuk ketiga model.
+
+| **FNN** | **DNN** | **Random Forest** |
+|---------|---------|-------------------|
+| ![Confusion Matrix FNN](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Confusion-Matrix_FNN.png) | ![Confusion Matrix DNN](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Confusion-Matrix_DNN.png) | ![Confusion Matrix RF](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Confusion-Matrix_RF.png) |
+
+#### Learning Curves 📈
+Berikut adalah learning curves untuk model **FNN** dan **DNN** yang menunjukkan bagaimana model belajar seiring berjalannya waktu:
+
+| **FNN** | **DNN** |
+|---------|---------|
+| ![Learning Curve FNN]([path_to_fnm_learning_curve](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_FNN.png)) | ![Learning Curve DNN]([path_to_dnn_learning_curve](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_DNN.png)) |
+
+
+---
+
+<h1 align="center">🎓 Sistem Sederhana Streamlit 🎓</h1>
+
+Aplikasi berbasis Streamlit ini bertujuan untuk memudahkan pengguna dalam melakukan prediksi kesuksesan akademik mahasiswa. Aplikasi ini dapat memprediksi kategori status akademik mahasiswa (Dropout, Enrolled, Graduate) berdasarkan input yang diberikan.
+
+### Tampilan
+
+> Menu **Sidebar** terdiri dari **Pemilihan Model yang Ingin Digunakan** dan **Info Sistem**, tampilannya dapat dilihat pada **Tampilan 1** dan **Tampilan 2** dibawah.
+
+#### **Tampilan 2** 📊
+- Fokus pada Halaman Utama, Di sini pengguna dapat membaca terkait **Penjelasan Sistem** dan **Tata Cara Penggunaan**.
+
+![Tampilan 2]([https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan1.png](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan2.png))
+
+#### **Tampilan 1** 💡
+- Pengguna akan disediakan beberapa pertanyaan dan memilih inputan terkait akademik dan faktor lainnya.
+
+![Tampilan 1](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan1.png)
+
+---
+
+#### Tampilan Hasil Prediksi
+Setelah memasukkan data, pengguna dapat melihat hasil prediksi dengan mengklik button prediksi. Tampilan dibawah adalah contoh yang menampilkan hasil prediksi beserta visualisasi distribusi dan informasi lainnya yang diperoleh.
+
+##### **Hasil Prediksi** 📈
+- **Dropout**: Prediksi status mahasiswa berisiko keluar.
+- **Enrolled**: Prediksi status mahasiswa masih terdaftar.
+- **Graduate**: Prediksi status mahasiswa lulus/sukses.
+- Confidence Skor ditampilkan di bawah setiap kategori status.
+
+![Tampilan Hasil](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Result.png)
+
+---
+
+### Link Live Demo
+
+Coba aplikasi prediksi kesuksesan akademik mahasiswa secara langsung dengan mengunjungi tautan di bawah ini:
+
+[🔗 **Demo Aplikasi Sederhana Streamlit**](https://student-academic-success-classification-ga83d9v6nvvbsz7akry2mo.streamlit.app/)
+
+
+---
+
+<h1 align="center">👤 Biodata 👤</h1>
+
+<p align="center">
+  <img src="https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/LOGO_UMM_INFORMATIKA.png" alt="Logo Informatika & Universitas Muhammadiyah Malang" high="100" width="200">
+</p>
+
+👤 **Fathul Agit Darmawan**  
+📘 **NIM**: 202110370311169  
+🎓 **Program Studi**: Teknik Informatika  
+🏛️ **Universitas Muhammadiyah Malang**
 
 ---
 
