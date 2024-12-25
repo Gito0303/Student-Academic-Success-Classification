@@ -2,8 +2,6 @@
 
 # <h1 align="center">STUDENT ACADEMIC SUCCESS CLASSIFICATION</h1>
 
----
-
 <div align="center">
   <img src="https://www.timeshighereducation.com/sites/default/files/examination.jpg" alt="Gambar Utama" width="500" height="300">
   <p>
