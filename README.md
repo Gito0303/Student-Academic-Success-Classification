@@ -186,6 +186,7 @@ Anda juga dapat menginstal dependensi satu per satu menggunakan perintah seperti
 ```bash
 pdm add streamlit==1.37.0
 ```
+
 > Lakukan hal yang sama untuk semua dependensi yang tersedia di [requirements.txt](Student-Academic-Success-Classification/requirements.txt)
 
 ### Menjalankan Sistem Prediksi
@@ -193,6 +194,7 @@ Untuk menjalankan sistem prediksi, buka terminal dan jalankan file [App.py](Stud
 ```bash
 streamlit run App.py
 ```
+
 > Jika anda ingin lansung melihat penggunaan Sistem Prediksi dari project ini, Lihat bagian [Link Live Demo](#link-live-demo)
 
 ### Pelatihan Model
