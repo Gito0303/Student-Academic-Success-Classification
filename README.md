@@ -19,21 +19,20 @@
 
 ---
 
-1. [Pendahuluan](#-pendahuluan)
+1. [Deskripsi Project](#-klasifikasi-kesuksesan-akademik-mahasiswa-)
 2. [Sumber Dataset](#-sumber-dataset)
-
 
 
 ---
 
 
-## 📚 **Klasifikasi Kesuksesan Akademik Mahasiswa** 🎓
+<h1 align="center">📚 Deskripsi Project 📚</h1>
 
 Proyek ini bertujuan untuk **mengembangkan sistem klasifikasi kesuksesan akademik mahasiswa** berdasarkan berbagai faktor yang berkontribusi terhadap keberhasilan akademik. Sistem ini akan menggunakan beberapa model **Deep Learning** dan **Machine Learning** seperti **Feedforward Neural Network (FNN)**, **Deep Neural Network (DNN)**, dan **Random Forest** untuk memprediksi kategori keberhasilan mahasiswa.
 
 ---
 
-### 💡 **Latar Belakang**
+### **Latar Belakang**
 
 Klasifikasi ini didasarkan pada berbagai faktor yang mempengaruhi kesuksesan akademik mahasiswa, yang mencakup:
 
@@ -46,7 +45,7 @@ Klasifikasi ini didasarkan pada berbagai faktor yang mempengaruhi kesuksesan aka
 
 Tujuan utama dari klasifikasi ini adalah untuk memprediksi status akademik mahasiswa menjadi salah satu dari tiga kategori berikut:
 
-#### 🔍 **Kategori Status Akademik:**
+#### 🔍 **Kategori Status Akademik:** 🔍
 
 - **Dropout**: Mahasiswa yang berhenti kuliah sebelum menyelesaikan program studinya.
 - **Enrolled**: Mahasiswa yang masih terdaftar aktif dan sedang melanjutkan proses perkuliahan.
@@ -54,7 +53,7 @@ Tujuan utama dari klasifikasi ini adalah untuk memprediksi status akademik mahas
 
 ---
 
-### 🎯 **Tujuan Pengembangan**
+### **Tujuan Pengembangan**
 
 1. **Membangun Model Klasifikasi** untuk memprediksi status akademik mahasiswa (Dropout, Enrolled, Graduate) berdasarkan faktor-faktor yang tersedia.
    
