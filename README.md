@@ -163,11 +163,7 @@ Model yang digunakan dalam proyek ini meliputi:
 2. **Deep Neural Network (DNN)**:
    - Jaringan saraf dengan beberapa lapisan tersembunyi yang memungkinkan model menangkap pola yang lebih kompleks dalam data.
 
-3. **TabNet**:
-   - Model deep learning yang dirancang khusus untuk data tabular.
-   - Menggunakan teknik perhatian (attention) untuk memproses fitur secara efisien.
-
-4. **Random Forest**:
+3. **Random Forest**:
    - Algoritma ensemble yang menggunakan banyak pohon keputusan untuk meningkatkan akurasi.
    - Menggabungkan prediksi dari banyak model pohon yang dilatih pada data yang berbeda.
 
