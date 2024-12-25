@@ -299,10 +299,6 @@ Coba aplikasi prediksi kesuksesan akademik mahasiswa secara langsung dengan meng
 
 <h1 align="center">👤 Biodata 👤</h1>
 
-<p align="center">
-  <img src="https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/LOGO_UMM_INFORMATIKA.png" alt="Logo Informatika & Universitas Muhammadiyah Malang" high="100" width="200">
-</p>
-
 👤 **Fathul Agit Darmawan**  
 📘 **NIM**: 202110370311169  
 🎓 **Program Studi**: Teknik Informatika  
