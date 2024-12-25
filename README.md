@@ -13,8 +13,6 @@
   </p>
 </div>
 
----
-
 # <h1 align="center">Table of Content</h1>
 
 ---
@@ -64,3 +62,97 @@ Tujuan utama dari klasifikasi ini adalah untuk memprediksi status akademik mahas
 3. **Membangun Sistem Klasifikasi dengan Streamlit**: Menciptakan aplikasi berbasis web yang memudahkan pengguna untuk mengakses dan menggunakan model klasifikasi ini secara langsung.
 
 ---
+
+
+<h1 align="center">📊 Sumber Dataset 📊</h1>
+
+
+Dataset yang digunakan dalam proyek ini berasal dari satu sumber utama:
+
+### 1. **Kaggle**
+
+- **Judul Dataset**: *Classification with an Academic Success Dataset*
+- **Link**: [Kaggle - Playground Series S4E6](https://www.kaggle.com/competitions/playground-series-s4e6)
+- **Deskripsi**: Dataset ini berisi data pelatihan (train.csv) dengan total **76.518 entri** dan **37 kolom** (36 fitur dan 1 target). Dataset ini dibuat dari model pembelajaran mendalam yang dilatih menggunakan data asli, yaitu **Predict Students Dropout and Academic Success** dari **UC Irvine Machine Learning Repository**, dengan distribusi fitur yang hampir sama namun tidak identik.
+
+#### **Data Asli** (seperti yang dijelaskan dalam deskripsi Kaggle):
+
+- **Judul Dataset**: *Predict Students Dropout and Academic Success*
+- **Link**: [UC Irvine - Predict Students Dropout and Academic Success](https://archive.ics.uci.edu/ml/datasets/Predict+Students+Dropout+and+Academic+Success)
+- **Deskripsi**: Dataset ini mencakup data dari beberapa institusi pendidikan tinggi yang berisi informasi tentang mahasiswa dari berbagai jurusan seperti agronomi, desain, pendidikan, keperawatan, jurnalisme, manajemen, layanan sosial, dan teknologi. Data mencakup faktor akademik, demografi, dan sosial-ekonomi yang diketahui saat pendaftaran, serta kinerja akademik mahasiswa pada semester pertama dan kedua.
+
+---
+
+<h1 align="center">🧑‍💻 Preprocessing dan Pemodelan 🧑‍💻</h1>
+
+
+### Pemilihan Kolom/Atribut
+
+Atribut yang digunakan dalam project ini adalah **24 Kolom** dari **37 Kolom** yang ada didalam Dataset yang digunakan. Kolom-kolom tersebut dijelaskan pada tabel dibawah ini.
+
+| Kolom                                         | Tipe        | Deskripsi                                                                                   |
+|-----------------------------------------------|-------------|---------------------------------------------------------------------------------------------|
+| **Marital Status**                            | Integer     | Status pernikahan: 1 – single, 2 – married, dll.                                            |
+| **Daytime/evening attendance**                | Integer     | Mode kehadiran: 1 – siang, 0 – malam.                                                       |
+| **Previous qualification**                    | Integer     | Kualifikasi pendidikan sebelumnya (misal: pendidikan menengah, sarjana, magister, dll.).    |
+| **Previous qualification (grade)**            | Continuous  | Nilai kualifikasi pendidikan sebelumnya (antara 0 hingga 200).                              |
+| **Mother's qualification**                    | Integer     | Kualifikasi pendidikan ibu (misal: pendidikan menengah, sarjana, magister, dll.).           |
+| **Father's qualification**                    | Integer     | Kualifikasi pendidikan ayah (misal: pendidikan menengah, sarjana, magister, dll.).          |
+| **Mother's occupation**                       | Integer     | Pekerjaan ibu (misal: 0 – pelajar, 1 – perwakilan legislatif, 2 – ilmuwan, dll.).           |
+| **Father's occupation**                       | Integer     | Pekerjaan ayah (misal: 0 – pelajar, 1 – perwakilan legislatif, 2 – ilmuwan, dll.).          |
+| **Displaced**                                 | Integer     | Apakah mahasiswa berasal dari luar daerah? (1 - ya, 0 - tidak)                              |
+| **Educational special needs**                 | Integer     | Apakah mahasiswa memiliki kebutuhan pendidikan khusus? (1 - ya, 0 - tidak)                 |
+| **Debtor**                                    | Integer     | Apakah mahasiswa memiliki hutang? (1 - ya, 0 - tidak)                                       |
+| **Gender**                                    | Integer     | Jenis kelamin mahasiswa (1 - laki-laki, 0 - perempuan)                                      |
+| **Scholarship holder**                        | Integer     | Apakah mahasiswa penerima beasiswa? (1 - ya, 0 - tidak)                                      |
+| **Age at enrollment**                         | Integer     | Usia mahasiswa saat pendaftaran                                                             |
+| **International**                             | Integer     | Apakah mahasiswa internasional? (1 - ya, 0 - tidak)                                          |
+| **Curricular units 1st sem (enrolled)**       | Integer     | Jumlah mata kuliah yang didaftarkan pada semester 1                                         |
+| **Curricular units 1st sem (evaluations)**    | Integer     | Jumlah evaluasi mata kuliah pada semester 1                                                  |
+| **Curricular units 1st sem (approved)**       | Integer     | Jumlah mata kuliah yang disetujui pada semester 1                                            |
+| **Curricular units 1st sem (without evaluations)** | Integer  | Jumlah mata kuliah tanpa evaluasi pada semester 1                                           |
+| **Curricular units 2nd sem (enrolled)**       | Integer     | Jumlah mata kuliah yang didaftarkan pada semester 2                                         |
+| **Curricular units 2nd sem (evaluations)**    | Integer     | Jumlah evaluasi mata kuliah pada semester 2                                                  |
+| **Curricular units 2nd sem (approved)**       | Integer     | Jumlah mata kuliah yang disetujui pada semester 2                                            |
+| **Curricular units 2nd sem (without evaluations)** | Integer  | Jumlah mata kuliah tanpa evaluasi pada semester 2                                           |
+| **Target**                                    | Categorical | Target. Masalah ini diformulasikan sebagai tugas klasifikasi tiga kategori (dropout, enrolled, graduate) |
+
+### Preprocessing Data
+
+1. **Transformasi Data**:
+   - **Label encoding** dilakukan pada kolom **Target** untuk mengubah kategori menjadi angka.
+   - **MinMax scaling** diterapkan pada kolom berikut untuk normalisasi:
+     - `Previous qualification (grade)`
+     - `Age at enrollment`
+     - `Curricular units 1st sem (enrolled)`
+     - `Curricular units 1st sem (evaluations)`
+     - `Curricular units 1st sem (approved)`
+     - `Curricular units 1st sem (without evaluations)`
+     - `Curricular units 2nd sem (enrolled)`
+     - `Curricular units 2nd sem (evaluations)`
+     - `Curricular units 2nd sem (approved)`
+     - `Curricular units 2nd sem (without evaluations)`
+
+2. **Pembagian Data**:
+   - Data dibagi menjadi **80%** untuk pelatihan dan **20%** untuk pengujian.
+
+---
+
+### Pemodelan
+
+Model yang digunakan dalam proyek ini meliputi:
+
+1. **Feedforward Neural Network (FNN)**:
+   - Model jaringan saraf sederhana di mana data bergerak satu arah dari input ke output tanpa loop.
+   - Digunakan untuk tugas klasifikasi atau regresi.
+
+2. **Deep Neural Network (DNN)**:
+   - Jaringan saraf dengan beberapa lapisan tersembunyi yang memungkinkan model menangkap pola yang lebih kompleks dalam data.
+
+3. **TabNet**:
+   - Model deep learning yang dirancang khusus untuk data tabular.
+   - Menggunakan teknik perhatian (attention) untuk memproses fitur secara efisien.
+
+4. **Random Forest**:
+   - Algoritma ensemble yang menggunakan banyak pohon keputusan untuk meningkatkan akurasi.
+   - Menggabungkan prediksi dari banyak model pohon yang dilatih pada data yang berbeda.
