@@ -230,29 +230,115 @@ Berikut adalah penjelasan tentang metrik yang digunakan dalam classification rep
 #### Tabel Perbandingan Classification Report 
 Berikut adalah perbandingan metrik evaluasi untuk setiap model:
 
-##### FNN Model Performance 🧑‍💻
-| Metric            | Dropout  | Enrolled  | Graduate  |
-|-------------------|----------|-----------|-----------|
-| **Precision**     | 0.90     | 0.63      | 0.81      |
-| **Recall**        | 0.79     | 0.51      | 0.95      |
-| **F1-Score**      | 0.84     | 0.56      | 0.87      |
-| **Accuracy**      | **0.81** |           |           |
+<div style="display: flex; justify-content: space-between;">
+  <div style="width: 30%; padding: 10px;">
+    <h3>FNN Model Performance 🧑‍💻</h3>
+    <table border="1">
+      <tr>
+        <th>Metric</th>
+        <th>Dropout</th>
+        <th>Enrolled</th>
+        <th>Graduate</th>
+      </tr>
+      <tr>
+        <td><strong>Precision</strong></td>
+        <td>0.90</td>
+        <td>0.63</td>
+        <td>0.81</td>
+      </tr>
+      <tr>
+        <td><strong>Recall</strong></td>
+        <td>0.79</td>
+        <td>0.51</td>
+        <td>0.95</td>
+      </tr>
+      <tr>
+        <td><strong>F1-Score</strong></td>
+        <td>0.84</td>
+        <td>0.56</td>
+        <td>0.87</td>
+      </tr>
+      <tr>
+        <td><strong>Accuracy</strong></td>
+        <td><strong>0.81</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 
-##### DNN Model Performance 🧑‍💻
-| Metric            | Dropout  | Enrolled  | Graduate  |
-|-------------------|----------|-----------|-----------|
-| **Precision**     | 0.86     | 0.59      | 0.85      |
-| **Recall**        | 0.83     | 0.57      | 0.89      |
-| **F1-Score**      | 0.85     | 0.58      | 0.87      |
-| **Accuracy**      | **0.81** |           |           |
+  <div style="width: 30%; padding: 10px;">
+    <h3>DNN Model Performance 🧑‍💻</h3>
+    <table border="1">
+      <tr>
+        <th>Metric</th>
+        <th>Dropout</th>
+        <th>Enrolled</th>
+        <th>Graduate</th>
+      </tr>
+      <tr>
+        <td><strong>Precision</strong></td>
+        <td>0.86</td>
+        <td>0.59</td>
+        <td>0.85</td>
+      </tr>
+      <tr>
+        <td><strong>Recall</strong></td>
+        <td>0.83</td>
+        <td>0.57</td>
+        <td>0.89</td>
+      </tr>
+      <tr>
+        <td><strong>F1-Score</strong></td>
+        <td>0.85</td>
+        <td>0.58</td>
+        <td>0.87</td>
+      </tr>
+      <tr>
+        <td><strong>Accuracy</strong></td>
+        <td><strong>0.81</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 
-##### Random Forest Model Performance 🧑‍💻
-| Metric            | Dropout  | Enrolled  | Graduate  |
-|-------------------|----------|-----------|-----------|
-| **Precision**     | 0.88     | 0.62      | 0.84      |
-| **Recall**        | 0.82     | 0.55      | 0.91      |
-| **F1-Score**      | 0.85     | 0.58      | 0.87      |
-| **Accuracy**      | **0.81** |           |           |
+  <div style="width: 30%; padding: 10px;">
+    <h3>Random Forest Model Performance 🧑‍💻</h3>
+    <table border="1">
+      <tr>
+        <th>Metric</th>
+        <th>Dropout</th>
+        <th>Enrolled</th>
+        <th>Graduate</th>
+      </tr>
+      <tr>
+        <td><strong>Precision</strong></td>
+        <td>0.88</td>
+        <td>0.62</td>
+        <td>0.84</td>
+      </tr>
+      <tr>
+        <td><strong>Recall</strong></td>
+        <td>0.82</td>
+        <td>0.55</td>
+        <td>0.91</td>
+      </tr>
+      <tr>
+        <td><strong>F1-Score</strong></td>
+        <td>0.85</td>
+        <td>0.58</td>
+        <td>0.87</td>
+      </tr>
+      <tr>
+        <td><strong>Accuracy</strong></td>
+        <td><strong>0.81</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
 
 
 #### Confusion Matrix 🔴🟢
