@@ -200,7 +200,7 @@ streamlit run App.py
 ### Pelatihan Model
 Model yang telah dilatih tersedia di direktori [Model](Model). Namun dalam hal ini, untuk Model Random Forest tidak dapat diupload kedalam direktori github karena keterbatasan ukuran file. Berikut disediakan Model Random Forest dalam bentuk link Google Drive.
 
-> [Google Drive - Model Save Pelatihan Random Forest (klik)]([https://drive.google.com/drive/folders/ID_FOLDER](https://drive.google.com/file/d/1RUcgZssSWjpJDrqSlsi22FPMO2JSEkTo/view?usp=sharing))
+> [Google Drive - Model Save Pelatihan Random Forest (klik)](https://drive.google.com/file/d/1RUcgZssSWjpJDrqSlsi22FPMO2JSEkTo/view?usp=sharing)
 
 Jika Anda ingin melatih model dari awal, jalankan file [Notebook-Model.ipynb](Notebook-Model.ipynb) yang tersedia di direktori ini menggunakan Google Colab.
 
