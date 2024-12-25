@@ -4,6 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model  # type: ignore
 import numpy as np
 import matplotlib.pyplot as plt # type: ignore
+from sklearn.preprocessing import MinMaxScaler # type: ignore
 import seaborn as sns # type: ignore
 import joblib # type: ignore
 
