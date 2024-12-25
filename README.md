@@ -267,7 +267,7 @@ Berikut adalah learning curves untuk model **FNN** dan **DNN** yang menunjukkan 
 
 | **FNN** | **DNN** |
 |---------|---------|
-| ![Learning Curve FNN]([path_to_fnm_learning_curve](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_FNN.png)) | ![Learning Curve DNN]([path_to_dnn_learning_curve](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_DNN.png)) |
+| ![Learning Curve FNN](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_FNN.png) | ![Learning Curve DNN](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/6819adf0e70dd8f02feac544c283af6d6bb54e11/Assets/Learning-Curves_DNN.png) |
 
 
 ---
@@ -283,7 +283,7 @@ Aplikasi berbasis Streamlit ini bertujuan untuk memudahkan pengguna dalam melaku
 #### **Tampilan 2** 📊
 - Fokus pada Halaman Utama, Di sini pengguna dapat membaca terkait **Penjelasan Sistem** dan **Tata Cara Penggunaan**.
 
-![Tampilan 2]([https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan1.png](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan2.png))
+![Tampilan 2](https://github.com/Gito0303/Student-Academic-Success-Classification/blob/088f9bc3ee338d74bb9218a9f144a8dd7a690e51/Assets/Tampilan2.png)
 
 #### **Tampilan 1** 💡
 - Pengguna akan disediakan beberapa pertanyaan dan memilih inputan terkait akademik dan faktor lainnya.
