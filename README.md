@@ -1,5 +1,3 @@
-***
-
 # <h1 align="center">STUDENT ACADEMIC SUCCESS CLASSIFICATION</h1>
 
 <div align="center">
@@ -13,7 +11,6 @@
 
 # <h1 align="center">TABLE OF CONTENT</h1>
 
----
 
 1. [Deskripsi Project](#-deskripsi-project-)
       - [Latar Belakang](#latar-belakang)
