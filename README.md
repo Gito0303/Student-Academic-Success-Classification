@@ -13,15 +13,23 @@
   </p>
 </div>
 
-# <h1 align="center">Table of Content</h1>
+# <h1 align="center">TABLE OF CONTENT</h1>
 
 ---
 
 1. [Deskripsi Project](#-deskripsi-project-)
       - [Latar Belakang](#latar-belakang)
       - [Tujuan Pengembangan](#tujuan-pengembangan)
-3. [Sumber Dataset](#-sumber-dataset)
-
+2. [Sumber Dataset](#-sumber-dataset-)
+3. [Preprocessing dan Pemodelan](#-preprocessing-dan-pemodelan-)
+      - [Pemilihan Kolom/Atribut](#pemilihan-kolomatribut)
+      - [Preprocessing Data](#preprocessing-data)
+      - [Pemodelan](#pemodelan)
+4. [Langkah Instalasi](#-langkah-instalasi-)
+      - [Software Utama](#software-utama)
+      - [Dependensi](#dependensi)
+      - [Menjalankan Sistem Prediksi](#menjalankan-sistem-prediksi)
+      - [Pelatihan Model](#pelatihan-model)
 
 ---
 
@@ -156,3 +164,44 @@ Model yang digunakan dalam proyek ini meliputi:
 4. **Random Forest**:
    - Algoritma ensemble yang menggunakan banyak pohon keputusan untuk meningkatkan akurasi.
    - Menggabungkan prediksi dari banyak model pohon yang dilatih pada data yang berbeda.
+
+---
+
+<h1 align="center">🔧 Langkah Instalasi 🔧</h1>
+
+### Software Utama
+Proyek ini dapat dijalankan menggunakan Google Colab dan VSCode. Pastikan Python 3.10.16 telah terinstal di sistem Anda.
+
+### Dependensi
+Dependensi yang diperlukan untuk menjalankan proyek ini telah disediakan dalam file [requirements.txt](Student-Academic-Success-Classification/requirements.txt) di direktori ini. Anda dapat menginstal seluruh dependensi dengan salah satu cara berikut:
+
+#### Cara 1: Instalasi Langsung
+Jalankan perintah berikut di terminal:
+```bash
+pip install -r requirements.txt
+```
+
+#### Cara 2: Instalasi Manual
+Anda juga dapat menginstal dependensi satu per satu menggunakan perintah seperti berikut:
+```bash
+pdm add streamlit==1.37.0
+```
+> Lakukan hal yang sama untuk semua dependensi yang tersedia di [requirements.txt](Student-Academic-Success-Classification/requirements.txt)
+
+### Menjalankan Sistem Prediksi
+Untuk menjalankan sistem prediksi, buka terminal dan jalankan file [App.py](Student-Academic-Success-Classification/App.py) dengan perintah berikut:
+```bash
+streamlit run App.py
+```
+> Jika anda ingin lansung melihat penggunaan Sistem Prediksi dari project ini, Lihat bagian [Link Live Demo](#link-live-demo)
+
+### Pelatihan Model
+Model yang telah dilatih tersedia di direktori [Model](Student-Academic-Success-Classification/Model). Namun dalam hal ini, untuk Model Random Forest tidak dapat diupload kedalam direktori github karena keterbatasan ukuran file. Berikut disediakan Model Random Forest dalam bentuk link Google Drive.
+
+> [Google Drive - Model Save Pelatihan Random Forest (klik)]([https://drive.google.com/drive/folders/ID_FOLDER](https://drive.google.com/file/d/1RUcgZssSWjpJDrqSlsi22FPMO2JSEkTo/view?usp=sharing))
+
+Jika Anda ingin melatih model dari awal, jalankan file [Notebook-Model.ipynb](Student-Academic-Success-Classification/Notebook-Model.ipynb) yang tersedia di direktori ini menggunakan Google Colab.
+
+
+---
+
