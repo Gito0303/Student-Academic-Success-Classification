@@ -173,7 +173,7 @@ Model yang digunakan dalam proyek ini meliputi:
 Proyek ini dapat dijalankan menggunakan Google Colab dan VSCode. Pastikan Python 3.10.16 telah terinstal di sistem Anda.
 
 ### Dependensi
-Dependensi yang diperlukan untuk menjalankan proyek ini telah disediakan dalam file [requirements.txt](Student-Academic-Success-Classification/requirements.txt) di direktori ini. Anda dapat menginstal seluruh dependensi dengan salah satu cara berikut:
+Dependensi yang diperlukan untuk menjalankan proyek ini telah disediakan dalam file [requirements.txt](requirements.txt) di direktori ini. Anda dapat menginstal seluruh dependensi dengan salah satu cara berikut:
 
 #### Cara 1: Instalasi Langsung
 Jalankan perintah berikut di terminal:
@@ -187,10 +187,10 @@ Anda juga dapat menginstal dependensi satu per satu menggunakan perintah seperti
 pdm add streamlit==1.37.0
 ```
 
-> Lakukan hal yang sama untuk semua dependensi yang tersedia di [requirements.txt](Student-Academic-Success-Classification/requirements.txt)
+> Lakukan hal yang sama untuk semua dependensi yang tersedia di [requirements.txt](requirements.txt)
 
 ### Menjalankan Sistem Prediksi
-Untuk menjalankan sistem prediksi, buka terminal dan jalankan file [App.py](Student-Academic-Success-Classification/App.py) dengan perintah berikut:
+Untuk menjalankan sistem prediksi, buka terminal dan jalankan file [App.py](App.py) dengan perintah berikut:
 ```bash
 streamlit run App.py
 ```
@@ -198,11 +198,11 @@ streamlit run App.py
 > Jika anda ingin lansung melihat penggunaan Sistem Prediksi dari project ini, Lihat bagian [Link Live Demo](#link-live-demo)
 
 ### Pelatihan Model
-Model yang telah dilatih tersedia di direktori [Model](Student-Academic-Success-Classification/Model). Namun dalam hal ini, untuk Model Random Forest tidak dapat diupload kedalam direktori github karena keterbatasan ukuran file. Berikut disediakan Model Random Forest dalam bentuk link Google Drive.
+Model yang telah dilatih tersedia di direktori [Model](Model). Namun dalam hal ini, untuk Model Random Forest tidak dapat diupload kedalam direktori github karena keterbatasan ukuran file. Berikut disediakan Model Random Forest dalam bentuk link Google Drive.
 
 > [Google Drive - Model Save Pelatihan Random Forest (klik)]([https://drive.google.com/drive/folders/ID_FOLDER](https://drive.google.com/file/d/1RUcgZssSWjpJDrqSlsi22FPMO2JSEkTo/view?usp=sharing))
 
-Jika Anda ingin melatih model dari awal, jalankan file [Notebook-Model.ipynb](Student-Academic-Success-Classification/Notebook-Model.ipynb) yang tersedia di direktori ini menggunakan Google Colab.
+Jika Anda ingin melatih model dari awal, jalankan file [Notebook-Model.ipynb](Notebook-Model.ipynb) yang tersedia di direktori ini menggunakan Google Colab.
 
 
 ---
