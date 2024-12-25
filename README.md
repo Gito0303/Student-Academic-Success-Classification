@@ -290,7 +290,7 @@ Coba aplikasi prediksi kesuksesan akademik mahasiswa secara langsung dengan meng
 
 <h1 align="center">👤 Biodata 👤</h1>
 
-👤 **Fathul Agit Darmawan**  
+👤 **[Fathul Agit Darmawan](https://github.com/Gito0303)**  
 📘 **NIM**: 202110370311169  
 🎓 **Program Studi**: Teknik Informatika  
 🏛️ **Universitas Muhammadiyah Malang**
