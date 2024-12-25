@@ -231,9 +231,11 @@ Berikut adalah penjelasan tentang metrik yang digunakan dalam classification rep
 Berikut adalah perbandingan metrik evaluasi untuk setiap model:
 
 <div style="display: flex; justify-content: space-between;">
+
+  <!-- FNN Model Performance -->
   <div style="width: 30%; padding: 10px;">
     <h3>FNN Model Performance 🧑‍💻</h3>
-    <table border="1">
+    <table border="1" style="width: 100%; text-align: center;">
       <tr>
         <th>Metric</th>
         <th>Dropout</th>
@@ -267,9 +269,10 @@ Berikut adalah perbandingan metrik evaluasi untuk setiap model:
     </table>
   </div>
 
+  <!-- DNN Model Performance -->
   <div style="width: 30%; padding: 10px;">
     <h3>DNN Model Performance 🧑‍💻</h3>
-    <table border="1">
+    <table border="1" style="width: 100%; text-align: center;">
       <tr>
         <th>Metric</th>
         <th>Dropout</th>
@@ -303,9 +306,10 @@ Berikut adalah perbandingan metrik evaluasi untuk setiap model:
     </table>
   </div>
 
+  <!-- Random Forest Model Performance -->
   <div style="width: 30%; padding: 10px;">
     <h3>Random Forest Model Performance 🧑‍💻</h3>
-    <table border="1">
+    <table border="1" style="width: 100%; text-align: center;">
       <tr>
         <th>Metric</th>
         <th>Dropout</th>
@@ -338,6 +342,7 @@ Berikut adalah perbandingan metrik evaluasi untuk setiap model:
       </tr>
     </table>
   </div>
+
 </div>
 
 
