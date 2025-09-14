@@ -1,17 +1,15 @@
 Welcome to Student Academic Success Classification Documentation!
-===============================================================
+=================================================================
 
+Welcome to the Student Academic Success Classification project. This documentation provides you with detailed instructions on how to install and use the model for predicting student success. 
+
+Contents:
+----------
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Contents:
+
    installation.rst
-
-Installation
-------------
-How to install and set up the project.
-
-Usage
-------
-How to use the model for predictions.
-
-Documentation generated with Sphinx.
+   usage.rst
+   features.rst
+   faq.rst
