@@ -11,4 +11,5 @@ extensions = [
     'sphinx.ext.napoleon',
 ]
 
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+
