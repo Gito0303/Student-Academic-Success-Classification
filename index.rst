@@ -4,6 +4,7 @@ Welcome to Student Academic Success Classification Documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   installation.rst
 
 Installation
 ------------
