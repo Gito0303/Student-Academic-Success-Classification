@@ -1,4 +1,4 @@
-sphinx==8.2.3
+sphinx==7.1.2
 sphinx_rtd_theme
 streamlit==1.37.0
 tensorflow==2.16.2
