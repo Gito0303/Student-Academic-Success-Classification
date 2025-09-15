@@ -10,7 +10,7 @@ You can interact with the model through a **Streamlit** web application. The int
 
 Access the interactive application at the following link:
 
-**[Student Academic Success Classification App](https://student-academic-success-classification-ga83d9v6nvvbsz7akry2mo.streamlit.app/)**
+`Student Academic Success Classification App <https://student-academic-success-classification-ga83d9v6nvvbsz7akry2mo.streamlit.app/>`_.
 
 Running the Application Locally
 -------------------------------
