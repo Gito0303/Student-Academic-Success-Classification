@@ -14,3 +14,4 @@ Contents:
    features.rst
    faq.rst
    dependencies.rst
+   model.rst
