@@ -1,3 +1,8 @@
+/* Menghilangkan tombol Next dan Previous */
+.pagination, .prev, .next {
+    display: none !important;
+}
+
 /* Menghilangkan menu pencarian samping */
 .wy-side-nav-search {
     display: none;
