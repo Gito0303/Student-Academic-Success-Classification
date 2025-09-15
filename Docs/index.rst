@@ -9,8 +9,9 @@ Contents:
    :maxdepth: 2
    :caption: Table of Contents:
 
+   about_project.rst
+   dependencies.rst
    installation.rst
+   model.rst
    usage.rst
    faq.rst
-   model.rst
-   dependencies.rst
