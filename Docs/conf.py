@@ -20,8 +20,10 @@ html_static_path = ['_static']
 # Menentukan folder dokumentasi
 master_doc = 'index'
 
+# Tema yang digunakan
 html_theme = 'sphinx_rtd_theme'
 
+# Menghilangkan tombol Next dan Previous
 html_context = {
     'next_prev_buttons': False,  # Menonaktifkan tombol next/prev
 }
@@ -32,4 +34,3 @@ html_theme_options = {
     'collapse_navigation': False,  # Menonaktifkan tombol collapse
     'sticky_navigation': False,  # Menonaktifkan sticky navigation
 }
-
