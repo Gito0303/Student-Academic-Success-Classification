@@ -13,3 +13,14 @@ extensions = [
 
 html_theme = 'sphinx_rtd_theme'
 
+html_context = {
+    'next_prev_buttons': False,  # Menonaktifkan tombol next/prev
+}
+
+# Mengatur kedalaman navigasi agar dapat menavigasi dengan daftar isi
+html_theme_options = {
+    'navigation_depth': 4,  # Menambah kedalaman navigasi di TOC
+    'collapse_navigation': False,  # Menonaktifkan tombol collapse
+    'sticky_navigation': False,  # Menonaktifkan sticky navigation
+}
+
