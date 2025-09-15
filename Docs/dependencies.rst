@@ -1,108 +1,147 @@
-# Dependensi yang Digunakan
+Dependencies
+============
 
-Berikut adalah dependensi yang digunakan dalam proyek ini:
+Below are the dependencies used in this project:
 
-## 1. **Sphinx**
+1. Sphinx
+---------
 
-- **Versi**: 7.1.2
-- **Fungsi**: Digunakan untuk menghasilkan dokumentasi proyek dalam format HTML atau PDF.
-- **Link Resmi**: `https://www.sphinx-doc.org/`
+- **Version**: 7.1.2
+- **Function**: Used to generate project documentation in HTML or PDF format.
+- **Official Link**: `Sphinx Documentation <https://www.sphinx-doc.org/>`_
 
-### Instalasi:
-```bash
-pip install sphinx==7.1.2
-```
+Installation:
+~~~~~~~~~~~~~
 
-## 2. **Sphinx RTD Theme**
+.. code-block:: bash
 
-- **Fungsi**: Tema untuk Sphinx yang digunakan untuk menghasilkan dokumentasi dengan tampilan yang bersih dan profesional.
-- **Link Resmi**: `https://sphinx-rtd-theme.readthedocs.io/`
+   pip install sphinx==7.1.2
 
-### Instalasi:
-```bash
-pip install sphinx_rtd_theme
-```
 
-## 3. **Streamlit**
+2. Sphinx RTD Theme
+-------------------
 
-- **Versi**: 1.37.0
-- **Fungsi**: Digunakan untuk membuat aplikasi berbasis web yang memungkinkan pengguna untuk berinteraksi dengan model klasifikasi secara langsung.
-- **Link Resmi**: `https://streamlit.io/`
+- **Function**: Theme for Sphinx used to produce documentation with a clean and professional look.
+- **Official Link**: `Sphinx RTD Theme <https://sphinx-rtd-theme.readthedocs.io/>`_
 
-### Instalasi:
-```bash
-pip install streamlit==1.37.0
-```
+Installation:
+~~~~~~~~~~~~~
 
-## 4. **TensorFlow**
+.. code-block:: bash
 
-- **Versi**: 2.16.2
-- **Fungsi**: Digunakan untuk membangun dan melatih model **Feedforward Neural Network (FNN)** dan **Deep Neural Network (DNN)**.
-- **Link Resmi**: `https://www.tensorflow.org/`
+   pip install sphinx_rtd_theme
 
-### Instalasi:
-```bash
-pip install tensorflow==2.16.2
-```
 
-## 5. **PyTorch-TabNet**
+3. Streamlit
+------------
 
-- **Versi**: 4.1.0
-- **Fungsi**: Digunakan untuk implementasi model TabNet, yang juga digunakan untuk klasifikasi data tabular.
-- **Link Resmi**: `https://github.com/google-research/google-research/tree/master/tabnet`
+- **Version**: 1.37.0
+- **Function**: Used to build web-based applications that allow users to interact directly with the classification model.
+- **Official Link**: `Streamlit <https://streamlit.io/>`_
 
-### Instalasi:
-```bash
-pip install pytorch-tabnet==4.1.0
-```
+Installation:
+~~~~~~~~~~~~~
 
-## 6. **Torch**
+.. code-block:: bash
 
-- **Versi**: 2.0.1
-- **Fungsi**: Digunakan untuk membangun dan melatih model berbasis PyTorch, termasuk Deep Neural Networks.
-- **Link Resmi**: `https://pytorch.org/`
+   pip install streamlit==1.37.0
 
-### Instalasi:
-```bash
-pip install torch==2.0.1
-```
 
-## 7. **Joblib**
+4. TensorFlow
+-------------
 
-- **Versi**: 1.2.0
-- **Fungsi**: Digunakan untuk menyimpan dan memuat model yang telah dilatih, memungkinkan model untuk digunakan kembali tanpa perlu pelatihan ulang.
-- **Link Resmi**: `https://joblib.readthedocs.io/`
+- **Version**: 2.16.2
+- **Function**: Used to build and train **Feedforward Neural Network (FNN)** and **Deep Neural Network (DNN)** models.
+- **Official Link**: `TensorFlow <https://www.tensorflow.org/>`_
 
-### Instalasi:
-```bash
-pip install joblib==1.2.0
-```
+Installation:
+~~~~~~~~~~~~~
 
-## 8. **Matplotlib**
+.. code-block:: bash
 
-- **Versi**: >=3.10.0
-- **Fungsi**: Digunakan untuk visualisasi data dan hasil prediksi, termasuk grafik dan confusion matrix.
-- **Link Resmi**: `https://matplotlib.org/`
+   pip install tensorflow==2.16.2
 
-### Instalasi:
-```bash
-pip install matplotlib>=3.10.0
-```
 
-## 9. **Seaborn**
+5. PyTorch-TabNet
+-----------------
 
-- **Versi**: >=0.13.2
-- **Fungsi**: Digunakan untuk visualisasi statistik yang lebih canggih dan menarik dibandingkan dengan matplotlib.
-- **Link Resmi**: `https://seaborn.pydata.org/`
+- **Version**: 4.1.0
+- **Function**: Used for implementing TabNet model for tabular data classification.
+- **Official Link**: `PyTorch-TabNet <https://github.com/google-research/google-research/tree/master/tabnet>`_
 
-### Instalasi:
-```bash
-pip install seaborn>=0.13.2
-```
+Installation:
+~~~~~~~~~~~~~
 
-### Cara Menginstal Semua Dependensi
+.. code-block:: bash
 
-Untuk menginstal semua dependensi yang dibutuhkan, Anda dapat menggunakan file `requirements.txt` yang disediakan dalam proyek ini. Cukup jalankan perintah berikut di terminal:
-```bash
-pip install -r requirements.txt
-```
+   pip install pytorch-tabnet==4.1.0
+
+
+6. Torch
+--------
+
+- **Version**: 2.0.1
+- **Function**: Used to build and train PyTorch-based models, including Deep Neural Networks.
+- **Official Link**: `PyTorch <https://pytorch.org/>`_
+
+Installation:
+~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   pip install torch==2.0.1
+
+
+7. Joblib
+---------
+
+- **Version**: 1.2.0
+- **Function**: Used to save and load trained models, allowing reuse without retraining.
+- **Official Link**: `Joblib <https://joblib.readthedocs.io/>`_
+
+Installation:
+~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   pip install joblib==1.2.0
+
+
+8. Matplotlib
+-------------
+
+- **Version**: >=3.10.0
+- **Function**: Used for data visualization and prediction results, including graphs and confusion matrices.
+- **Official Link**: `Matplotlib <https://matplotlib.org/>`_
+
+Installation:
+~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   pip install matplotlib>=3.10.0
+
+
+9. Seaborn
+----------
+
+- **Version**: >=0.13.2
+- **Function**: Used for advanced statistical visualizations compared to matplotlib.
+- **Official Link**: `Seaborn <https://seaborn.pydata.org/>`_
+
+Installation:
+~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+   pip install seaborn>=0.13.2
+
+
+Install All Dependencies
+------------------------
+
+To install all required dependencies at once, use the provided **requirements.txt** file:
+
+.. code-block:: bash
+
+   pip install -r requirements.txt
