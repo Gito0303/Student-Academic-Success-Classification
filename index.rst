@@ -1,7 +1,7 @@
 Welcome to Student Academic Success Classification Documentation!
 =================================================================
 
-Welcome to the Student Academic Success Classification project. This documentation provides you with detailed instructions on how to install and use the model for predicting student success. 
+Welcome to the Student Academic Success Classification project. This documentation provides you with detailed instructions on how to install and use the model for predicting student success.
 
 Contents:
 ----------
@@ -13,3 +13,4 @@ Contents:
    usage.rst
    features.rst
    faq.rst
+   dependencies.rst
