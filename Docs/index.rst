@@ -9,9 +9,8 @@ Contents:
    :maxdepth: 2
    :caption: Table of Contents:
 
-   Docs/installation.rst
-   Docs/usage.rst
-   Docs/features.rst
-   Docs/faq.rst
-   Docs/dependencies.rst
-   Docs/model.rst
+   installation.rst
+   usage.rst
+   faq.rst
+   model.rst
+   dependencies.rst
