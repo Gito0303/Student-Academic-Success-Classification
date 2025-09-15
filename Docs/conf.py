@@ -11,6 +11,15 @@ extensions = [
     'sphinx.ext.napoleon',
 ]
 
+# Mengatur folder sumber
+source_suffix = '.rst'
+
+# Menentukan path untuk file statis seperti CSS
+html_static_path = ['_static']
+
+# Menentukan folder dokumentasi
+master_doc = 'index'
+
 html_theme = 'sphinx_rtd_theme'
 
 html_context = {
