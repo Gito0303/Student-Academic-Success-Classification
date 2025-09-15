@@ -1,53 +1,60 @@
-# Model yang Digunakan
+Model Used
+==========
 
-Proyek ini menggunakan beberapa model pembelajaran mesin untuk melakukan klasifikasi kesuksesan akademik mahasiswa. Berikut adalah model-model yang digunakan dalam proyek ini:
+This project uses several machine learning models to classify student academic success. The following models are used in this project:
 
-## 1. Feedforward Neural Network (FNN)
+1. Feedforward Neural Network (FNN)
+=============================
 
-Feedforward Neural Network (FNN) adalah jaringan saraf yang sederhana di mana data bergerak satu arah dari input ke output tanpa loop. Ini adalah model jaringan saraf yang paling dasar dan digunakan untuk tugas klasifikasi atau regresi.
+Feedforward Neural Network (FNN) is a simple neural network where data moves in one direction from input to output without loops. It is the most basic neural network model and is used for classification or regression tasks.
 
-### Arsitektur:
-- **Lapisan input**: Menyusun data fitur mahasiswa.
-- **Lapisan tersembunyi**: Menggunakan fungsi aktivasi seperti ReLU untuk menangkap pola kompleks.
-- **Lapisan output**: Menghasilkan prediksi tentang status akademik mahasiswa (Dropout, Enrolled, Graduate).
+Architecture
+------------
 
-### Link Resmi:
-- **Website**: `https://www.tensorflow.org/`
+- **Input layer**: Arranges student data features.
+- **Hidden layer**: Uses activation functions like ReLU to capture complex patterns.
+- **Output layer**: Produces predictions about the student's academic status (Dropout, Enrolled, Graduate).
 
-### Instalasi:
-```bash
-pip install tensorflow==2.16.2
-```
+Official Website:
+-----------------
+For more information on Feedforward Neural Networks, visit `TensorFlow - FNN <https://www.tensorflow.org/tutorials/keras/classification>`_.
 
-## 2. Deep Neural Network (DNN)
+2. Deep Neural Network (DNN)
+=========================
 
-Deep Neural Network (DNN) adalah jaringan saraf dengan banyak lapisan tersembunyi, yang memungkinkan model untuk menangkap pola yang lebih kompleks dalam data. DNN sering digunakan untuk masalah yang melibatkan data yang sangat besar dan kompleks.
+Deep Neural Network (DNN) is a neural network with multiple hidden layers that allows the model to capture more complex patterns in data. DNNs are often used for problems involving very large and complex datasets.
 
-### Arsitektur:
-- **Lapisan input**: Menyusun data mahasiswa.
-- **Beberapa lapisan tersembunyi**: Menggunakan fungsi aktivasi untuk menangkap representasi data yang lebih abstrak.
-- **Lapisan output**: Menyajikan prediksi status akademik mahasiswa.
+Architecture
+------------
 
-### Link Resmi:
-- **Website**: `https://www.tensorflow.org/`
+- **Input layer**: Organizes student data.
+- **Multiple hidden layers**: Uses activation functions to capture more abstract data representations.
+- **Output layer**: Presents predictions about the student's academic status.
 
-### Instalasi:
-```bash
-pip install tensorflow==2.16.2
-```
+Official Website:
+-----------------
+For more information on Deep Neural Networks, visit `TensorFlow - DNN <https://www.tensorflow.org/tutorials/keras/classification>`_.
 
-## 3. Random Forest
+3. Random Forest
+==================
 
-Random Forest adalah algoritma ensemble yang menggunakan banyak pohon keputusan untuk meningkatkan akurasi model. Random Forest menggabungkan prediksi dari banyak model pohon yang dilatih pada data yang berbeda untuk menghasilkan hasil yang lebih stabil dan akurat.
+Random Forest is an ensemble algorithm that uses many decision trees to improve model accuracy. Random Forest combines predictions from many tree models trained on different data to produce a more stable and accurate result.
 
-### Proses:
-- Banyak pohon keputusan dibangun dengan menggunakan sampel acak dari data.
-- Hasil prediksi dari masing-masing pohon digabungkan untuk membuat prediksi akhir.
+Process
+-------
 
-### Link Resmi:
-- **Website**: `https://scikit-learn.org/`
+- Many decision trees are built using random samples from the data.
+- Predictions from each tree are combined to create the final prediction.
 
-### Instalasi:
-```bash
-pip install scikit-learn==0.24.0
-```
+Official Website:
+-----------------
+For more information on Random Forest, visit `Scikit-learn - Random Forest <https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html>`_.
+
+Installation
+------------
+
+To install TensorFlow, run the following command in your terminal:
+
+.. code-block:: bash
+
+   pip install tensorflow==2.16.2
